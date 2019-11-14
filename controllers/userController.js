@@ -110,6 +110,7 @@ exports.profilePostsScreen = (req, res) => {
     res.render('profile', {
       currentPage: 'posts',
       posts: posts,
+      title: `Profile for ${req.profileUser.username}`,
       profileUsername: req.profileUser.username,
       profileAvatar: req.profileUser.avatar,
       isFollowing: req.isFollowing,
