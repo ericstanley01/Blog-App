@@ -171,3 +171,16 @@ exports.profileFollowingScreen = async (req, res) => {
 
   }
 }
+
+exports.doesUsernameExist = (req, res) => {
+  User.findByUsername(req.body.username).then(() => {
+    res.json(true)
+  }).catch(() => {
+    res.json(false)
+  })
+}
+
+exports.doesEmailExist = async (req, res) => {
+  let emailBool = await User.doesEmailExist(req.body.email)
+  res.json(emailBool)
+}
