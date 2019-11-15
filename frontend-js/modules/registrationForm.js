@@ -58,7 +58,7 @@ export default class RegistrationForm {
       !this.username.errors &&
       this.email.isUnique &&
       !this.email.errors &&
-      !this.password.erros) {
+      !this.password.errors) {
       this.form.submit()
     }
   }
