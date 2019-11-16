@@ -134,7 +134,8 @@ User.findByUsername = function(username) {
         userDoc = {
           _id: userDoc.data._id,
           username: userDoc.data.username,
-          avatar: userDoc.avatar
+          avatar: userDoc.avatar,
+          email: userDoc.data.email
         }
         resolve(userDoc)
       } else {
