@@ -4,4 +4,4 @@ Run `npm run watch` to start the node server. Make sure to update the config set
 
 ## Demo
 
-http://js-blog-app.stanleyeric.com/
+https://js-blog-app.herokuapp.com/
